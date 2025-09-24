@@ -1,0 +1,108 @@
+header {
+  background-image: url("images/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* adjust to your banner height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+#links li {
+    display: inline;
+    padding: 15px;
+    border-right: 3px solid white;
+}
+
+#links li:hover {
+    background-color: white;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+#title {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  color: gold;
+  -webkit-text-stroke: 3px black;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    
+}
+
+p, dd {
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    word-spacing: 2px;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+dt {
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    word-spacing: 2px;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.bosses {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-color: white;
+    
+}
+
+caption, h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
