@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Superhero Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Superhero Quiz</h1>
+
+    <form>
+      <!-- Q1: Radio (single choice) -->
+      <fieldset>
+        <legend>1) Who is known as “The Dark Knight”?</legend>
+        <label>
+          <input type="radio" name="q1" value="batman" required />
+          Batman
+        </label>
+        <label>
+          <input type="radio" name="q1" value="ironman" />
+          Iron Man
+        </label>
+        <label>
+          <input type="radio" name="q1" value="thor" />
+          Thor
+        </label>
+      </fieldset>
+
+      <!-- Q2: Radio (single choice) -->
+      <fieldset>
+        <legend>2) Which hero is worthy to wield Mjölnir?</legend>
+        <label>
+          <input type="radio" name="q2" value="thor" required />
+          Thor
+        </label>
+        <label>
+          <input type="radio" name="q2" value="spiderman" />
+          Spider-Man
+        </label>
+        <label>
+          <input type="radio" name="q2" value="aquaman" />
+          Aquaman
+        </label>
+      </fieldset>
+
+      <!-- Q3: Checkboxes (multiple answers) -->
+      <fieldset>
+        <legend>3) Select all members of the Avengers:</legend>
+        <label>
+          <input type="checkbox" name="q3" value="ironman" />
+          Iron Man
+        </label>
+        <label>
+          <input type="checkbox" name="q3" value="thor" />
+          Thor
+        </label>
+        <label>
+          <input type="checkbox" name="q3" value="captainamerica" />
+          Captain America
+        </label>
+        <label>
+          <input type="checkbox" name="q3" value="batman" />
+          Batman
+        </label>
+        <label>
+          <input type="checkbox" name="q3" value="wonderwoman" />
+          Wonder Woman
+        </label>
+      </fieldset>
+
+      <!-- Q4: Checkboxes (multiple answers) -->
+      <fieldset>
+        <legend>4) Which of these heroes are from DC? (Select all that apply)</legend>
+        <label>
+          <input type="checkbox" name="q4" value="batman" />
+          Batman
+        </label>
+        <label>
+          <input type="checkbox" name="q4" value="wonderwoman" />
+          Wonder Woman
+        </label>
+        <label>
+          <input type="checkbox" name="q4" value="superman" />
+          Superman
+        </label>
+        <label>
+          <input type="checkbox" name="q4" value="spiderman" />
+          Spider-Man
+        </label>
+        <label>
+          <input type="checkbox" name="q4" value="blackpanther" />
+          Black Panther
+        </label>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset" class="ghost">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
