@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!---Using a tax rate of 8.25%, create a web form that allows the user to enter a purchase amount, and then when the users clicks a button, it will display the tax amount in a disabled textbox and the total in another disabled textbox. Submit zipped file and Github Link-->
+<html>
+    <head>
+        <title>Tax Calculator</title>
+        <script>
+            // define a function
+            function calculateTax()
+            {
+                // convert input to a number
+                var purchasePrice = parseFloat(document.getElementById("purchasePrice").value);
+
+                // validates user input
+                if(isNaN(purchasePrice) || purchasePrice < 0)
+                {
+                  alert("Please enter a valid purchase amount.");
+                  return;
+                }
+
+                // calculate tax and total
+                var taxAmount = purchasePrice * 0.0825;
+                var totalAmount = purchasePrice + taxAmount;
+                
+                // display results rounded to 2 decimal places
+                document.getElementById("taxAmount").value = taxAmount.toFixed(2);
+                document.getElementById("totalAmount").value = totalAmount.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+    <h2>Tax Calculator</h2>
+    <form>
+      <label for="purchasePrice">Purchase Price:</label><br>
+      <input type="text" id="purchasePrice" name="purchasePrice"><br><br>
+
+      <label for="taxAmount">Tax Amount:</label><br>
+      <input type="text" id="taxAmount" name="taxAmount" disabled><br><br>
+
+      <label for="totalAmount">Total Amount:</label><br>
+      <input type="text" id="totalAmount" name="totalAmount" disabled><br><br>
+
+      <input type="button" value="Calculate Tax" onclick="calculateTax()">
+    </form>
+  </body>
+</html>
