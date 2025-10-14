@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: darkslategray;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.feedback.correct {
+  color: green;
+}
+
+.feedback.incorrect {
+  color: red;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: midnightblue;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: navy;
+}
+
+#results {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: black;
+}

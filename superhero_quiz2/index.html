@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Superhero Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Superhero Quiz</h1>
+
+    <form id="quiz-form">
+      <!-- Q1 -->
+      <fieldset>
+        <legend>1) Who is known as “The Dark Knight”?</legend>
+        <label><input type="radio" name="q1" value="batman" /> Batman</label>
+        <label><input type="radio" name="q1" value="ironman" /> Iron Man</label>
+        <label><input type="radio" name="q1" value="thor" /> Thor</label>
+        <p class="feedback" id="fb-q1"></p>
+      </fieldset>
+
+      <!-- Q2 -->
+      <fieldset>
+        <legend>2) Which hero is worthy to wield Mjölnir?</legend>
+        <label><input type="radio" name="q2" value="thor" /> Thor</label>
+        <label><input type="radio" name="q2" value="spiderman" /> Spider-Man</label>
+        <label><input type="radio" name="q2" value="aquaman" /> Aquaman</label>
+        <p class="feedback" id="fb-q2"></p>
+      </fieldset>
+
+      <!-- Q3 -->
+      <fieldset>
+        <legend>3) Select all members of the Avengers:</legend>
+        <label><input type="checkbox" name="q3" value="ironman" /> Iron Man</label>
+        <label><input type="checkbox" name="q3" value="thor" /> Thor</label>
+        <label><input type="checkbox" name="q3" value="captainamerica" /> Captain America</label>
+        <label><input type="checkbox" name="q3" value="batman" /> Batman</label>
+        <label><input type="checkbox" name="q3" value="wonderwoman" /> Wonder Woman</label>
+        <p class="feedback" id="fb-q3"></p>
+      </fieldset>
+
+      <!-- Q4 -->
+      <fieldset>
+        <legend>4) Which of these heroes are from DC? (Select all that apply)</legend>
+        <label><input type="checkbox" name="q4" value="batman" /> Batman</label>
+        <label><input type="checkbox" name="q4" value="wonderwoman" /> Wonder Woman</label>
+        <label><input type="checkbox" name="q4" value="superman" /> Superman</label>
+        <label><input type="checkbox" name="q4" value="spiderman" /> Spider-Man</label>
+        <label><input type="checkbox" name="q4" value="blackpanther" /> Black Panther</label>
+        <p class="feedback" id="fb-q4"></p>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="button" id="check-btn">Check Answers</button>
+      </div>
+
+      <div id="results"></div>
+    </form>
+  </main>
+</body>
+</html>
