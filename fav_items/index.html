@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Everyday Carry: 10 Items</title>
+    </head>
+    <body>
+        <main>
+            <h1>10 EDC Items</h1>
+            <p>Here are the things I carry daily:</p>
+            <ul id="edc-list" aria-label="Everyday Carry Items"></ul>
+        </main>
+        <script>
+            // array of 10 items
+            const items = [
+                'laptop bag',
+                'macbook',
+                'airpods',
+                'iphone',
+                'pocket knife',
+                'wallet',
+                'mini flashlight',
+                'usb-c charger',
+                'notepad',
+                'sunglasses'
+            ];
+
+            // rendering list using a loop
+            const listEl = document.getElementById('edc-list');
+
+            for (let i = 0; i < items.length; i++) {
+                const li = document.createElement('li');
+                li.textContent = items[i];
+                listEl.appendChild(li);
+            }
+        </script>
+    </body>
+</html>
