@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Paws Animal Rescue</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap CSS-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+
+        <!--Styles-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header / Navbar-->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-orange">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <span class="me-1">🐾</span>Paws Animal Rescue
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mainNav" aria-controls="mainNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>    
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <!-- These will be their own pages later -->
+                            <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
+                            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+                            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Main Content-->
+        <main>
+            <section class="hero py-5">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <!--Left side: big heading and text-->
+                        <div class="col-md-8 hero-text">
+                            <h1 class="display-4 fw-bold">Find your new best friend!</h1>
+
+                            <p class="lead">
+                                Paws Animal Rescue connects loving families with pets in need of a forever home.
+                            </p>
+
+                            <!--Unordered List-->
+                            <section aria-labelledby="why-adopt-heading" class="mb-4">
+                                <h2 id="why-adopt-heading" class="h3 fw-bold">Why Adopt with Us?</h2>
+                                <p>
+                                    We are a non-profit rescue dedicated to matching pets with caring homes.
+                                    Every adoption includes:
+                                </p>
+                                <ul>
+                                    <li>Vaccinations and a basic health check</li>
+                                    <li>Spay/Neuter surgery and microchipping</li>
+                                    <li>Post-adoption support if you have any questions</li>
+                                </ul>
+                            </section>
+
+                            <!--Ordered List-->
+                            <section aria-labelledby="how-works-heading" class="mb-4">
+                                <h2 id="how-works-heading" class="h4">How Adoption Works</h2>
+                                <ol>
+                                    <li>Browse our adoptable pets.</li>
+                                    <li>Submit a quick online application.</li>
+                                    <li>Meet your new friend at the shelter.</li>
+                                    <li>Complete paperwork and bring them home.</li>
+                                </ol>
+                            </section>
+                            <!--Call to action buttons-->
+                            <div class="mb-4">
+                                <a class="btn btn-primary me-2" href="how-it-works.html">How Adoption Works</a>
+                                <a class="btn btn-outline-primary" href="adopt.html">View Adoptable Pets</a>
+                            </div>
+
+                            <!--Table-->
+                            <section aria-labelledby="fees-handling" class="mb-4">
+                                <h2 id="fees-handling" class="h5">Sample Adoption Fees</h2>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Pet Type</th>
+                                                <th>Fee</th>
+                                                <th>Includes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adult Dog</td>
+                                                <td>$150</td>
+                                                <td>Vaccines, spay/neuter, microchip</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puppy</td>
+                                                <td>$200</td>
+                                                <td>Vaccines, spay/neuter, microchip</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cat</td>
+                                                <td>$100</td>
+                                                <td>Vaccines, spay/neuter, microchip</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <!--Simple Form-->
+                            <section aria-labelledby="stay-in-touch-heading">
+                                <h2 id="stay-in-touch-heading" class="h5">Stay in Touch</h2>
+                                <p>Sign up to hear about new pets and events.</p>
+
+                                <form id="newsletterForm" class="row gy-2 gx-3 align-items-center">
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="newsletterName">Name</label>
+                                        <input type="text" class="form-control" id="newsletterName" name="name" required>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="newsletterEmail">Email</label>
+                                        <input type="email" class="form-control" id="newsletterEmail" name="email" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-success mt-2">Sign Up</button>
+                                        <p id="newsletterMessage" class="mt-2 small"></p>
+                                    </div>
+                                </form>
+                            </section>
+
+                            <!--Session storage message-->
+                            <p id="visitCount" class="mt-4 small text-muted"></p>
+                        </div>
+
+                        <!--Right side featured pets-->
+                        <aside class="col-md-4 mt-4 mt-md-0">
+                            <div class="featured-friends card">
+                                <div class="card-header text-center fw-bold">
+                                    Featured Friends
+                                </div>
+                                <ul id="featuredPets" class="list-unstyled mb-0">
+                                    <!--script.js will put pet cards here-->
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer class="py-3 bg-dark text-light mt-auto">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-1 mb-md-0 small">© 2025 Paws Animal Rescue</p>
+                <nav>
+                    <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+                    <a href="adopt.html" class="text-light text-decoration-none me-3">Adopt</a>
+                    <a href="contact.html" class="text-light text-decoration-none me-3">Contact</a>
+                </nav>
+            </div>
+        </footer>
+
+        <!--Bootstrap JS (for navbar toggle)-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+
+        <!--My javascript-->
+        <script src="scripts.js"></script>
+    </body>
+</html>

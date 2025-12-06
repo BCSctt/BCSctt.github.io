@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Adopt | Paws Animal Rescue</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap CSS-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        
+        <!--Styles-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header / Navbar (same as index, Adopt is active)-->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-orange">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <span class="me-1">🐾</span>Paws Animal Rescue
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mainNav" aria-controls="mainNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="adopt.html">Adopt</a></li>
+                            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+                            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--main content-->
+        <main class="py-5">
+            <div class="container">
+                <!--page title and intro-->
+                <section class="mb-4">
+                    <h1 class="fw-bold mb-3">Adoptable Pets</h1>
+                    <p class="lead">
+                        These are just a few of the wonderful cats and dogs waiting for a loving home.
+                        To get started, choose a pet you're interested in and contact us with their name.
+                    </p>
+
+                    <!--simple "filters" as anchor links-->
+                    <p class="mb-0">
+                        Jump to:
+                        <a href="#dogs" class="btn btn-sm btn-outline-primary me-2">Dogs</a>
+                        <a href="#cats" class="btn btn-sm btn-outline-primary">Cats</a>
+                    </p>
+                </section>
+
+                <!--Dog Section-->
+                <section id="dogs" class="mb-5">
+                    <h2 class="h3 mb-3">Dogs</h2>
+                    <div class="row g-4">
+                        <!--Dog 1-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/dog1.jpg" class="card-img-top" alt="Buddy the happy boy!">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Buddy</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>3 years</p>
+                                    <p class="card-text mb-3">
+                                        Friendly, calm and great with kids. Buddy loves walks, toys, and belly rubs.
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Dog 2-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/dog3.jpg" class="card-img-top" alt="Zoe the small girl!">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Zoe</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>6 months</p>
+                                    <p class="card-text mb-3">
+                                        Energetic and playful. Zoe would love an active family who loves to play!
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Dog 3-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/dog4.jpg" class="card-img-top" alt="Max the friendly face.">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Max</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>5 years</p>
+                                    <p class="card-text mb-3">
+                                        Gentle dog who loves naps in the sun and quiet evenings at home.
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Cat Section-->
+                <section id="cats" class="mb-5">
+                    <h2 class="h3 mb-3">Cats</h2>
+                    <div class="row g-4">
+                        <!--Cat 1-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/cat2.jpg" class="card-img-top" alt="Luna the gray.">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Luna</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>2 years</p>
+                                    <p class="card-text mb-3">
+                                        Shy at first but very cuddly once she feels safe. Perfect for a quiet home.
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Cat 2-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/cat3.jpg" class="card-img-top" alt="Milo the orange.">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Milo</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>1 years</p>
+                                    <p class="card-text mb-3">
+                                        Curious and playful. Milo loves feather toys and chasing laser pointers.
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Cat 3-->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="images/cat1.jpg" class="card-img-top" alt="Luna the gray.">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="h5 card-title">Cleo</h3>
+                                    <p class="card-text mb-1"><strong>Age:</strong>4 years</p>
+                                    <p class="card-text mb-3">
+                                        Calm, independent, and very tidy. Cleo enjoys a sunny window and evening snacks.
+                                    </p>
+                                    <a href="contact.html" class="btn btn-primary mt-auto">I'm Interested</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="py-3 bg-dark text-light mt-auto">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb1 mb-md-0 small">© 2025 Paws Animal Rescue</p>
+                <nav>
+                    <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+                    <a href="adopt.html" class="text-light text-decoration-none me-3">Adopt</a>
+                    <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+                </nav>
+            </div>
+        </footer>
+
+        <!--Bootstrap-->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+        </script>
+        
+        <!--JS Script-->
+        <script src="scripts.js"></script>
+    </body>
+</html>

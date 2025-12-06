@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact | Paws Animal Rescue</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        >
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header / Navbar-->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-orange">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <span class="me-1">🐾</span>Paws Animal Rescue
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mainNav" aria-controls="mainNav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="adopt.html">Adopt</a></li>
+                            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+                            <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Main Content-->
+        <main class="py-5">
+            <div class="container">
+                <!--Intro Row-->
+                <section class="mb-4">
+                    <h1 class="fw-bold mb-3">Contact Us</h1>
+                    <p class="lead">
+                        Have a question about adopting, volunteering, or donating? Send us a message
+                        and we'll get back to you as soon as we can.
+                    </p>
+                </section>
+
+                <div class="row g-4">
+                    <!--Contact Info-->
+                    <section class="col-md-5">
+                        <h2 class="h4 mb-3">Shelter Information</h2>
+                        <p>
+                            Paws Animal Rescue is a fictional shelter created for a class project.
+                            At a real shelter this would include directions, parking details, and
+                            other relevant information.
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li><strong>Address:</strong><br>
+                                1234 Rescue Lane.
+                                Edinburg, TX 78539
+                            </li>
+                            <li class="mt-2"><strong>Phone:</strong><br>
+                                (555) 555-1234
+                            </li>
+                            <li class="mt-2"><strong>Email:</strong><br>
+                                info@pawsanimalrescue.org
+                            </li>
+                        </ul>
+
+                        <h3 class="h5 mt-4">Hours (Sample)</h3>
+                        <ul class="list-unstyled">
+                            <li>Mon - Fri: 10:00AM - 6:00PM</li>
+                            <li>Sat: 10:00AM - 4:00PM</li>
+                            <li>Sun: Closed</li>
+                        </ul>
+                    </section>
+
+                    <!--Contact Form-->
+                    <section class="col-md-7">
+                        <h2 class="h4 mb-3">Send Us a Message</h2>
+
+                        <form id="contactForm">
+                            <div class="row gx-3">
+                                <!--Name + Email-->
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactName">Name</label>
+                                    <input type="text" class="form-control" id="contactName" name="name" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <lable class="form-label" for="contactEmail">Email</lable>
+                                    <input type="email" class="form-control" id="contactEmail" name="email" required>
+                                </div>
+
+                                <!--Phone / Best Time-->
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactPhone">Phone (optional)</label>
+                                    <input type="tel" class="form-control" id="contactPhone" name="phone"
+                                            placeholder="(555) 123-4567">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactTime">Best time to contact you</label>
+                                    <select id="contactTime" name="time" class="form-select">
+                                        <option value="">No Preference</option>
+                                        <option value="morning">Morning</option>
+                                        <option value="afternoon">Afternoon</option>
+                                        <option value="evening">Evening</option>
+                                    </select>
+                                </div>
+
+                                <!--Reason Radio Buttons-->
+                                <div class="col-12">
+                                    <fieldset>
+                                        <legend class="fs-6">Reason for contacting us <span class="text-danger">*</span></legend>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contactReason"
+                                                    id="reasonAdopt" value="adopt" required>
+                                            <label class="form-check-label" for="reasonAdopt">
+                                                I'm interested in adopting a pet
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contactReason"
+                                                    id="reasonVolunteer" value="volunteer">
+                                            <label class="form-check-label" for="reasonVolunteer">
+                                                I'd like to volunteer or foster
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contactReason"
+                                                    id="reasonDonate" value="donate">
+                                            <label class="form-check-label" for="reasonDonate">
+                                                I have a question about donating
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contactReason"
+                                                    id="reasonOther" value="other">
+                                            <label class="form-check-label" for="reasonOther">
+                                                Something else
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <!--Pet Name if Interested-->
+                                <div class="col-12">
+                                    <label class="form-label" for="contactPetName">
+                                        If you are asking about a specific pet, what is their name?
+                                    </label>
+                                    <input type="text" class="form-control" id="contactPetName" name="petName"
+                                            placeholder="Example: Luna, Buddy, Milo">
+                                </div>
+
+                                <!--Message-->
+                                <div class="col-12">
+                                    <label class="form-label" for="contactMessageText">Your Message:</label>
+                                    <textarea class="form-control" id="contactMessageText" name="message"
+                                                rows="4" required></textarea>
+                                </div>
+                                
+                                <!--Checkboxes-->
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contact18" required>
+                                        <label class="form-check-label" for="contact18">
+                                            I am at least 18 years old or contacting with a parent/guardian.
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contactUpdates">
+                                        <label class="form-check-label" for="contactUpdates">
+                                            I would like to receive email updates about new pets and events.
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--Submit-->
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success mt-2">Send Message</button>
+                                </div>
+                            </div>
+
+                            <!--JS feedback message-->
+                            <p id="contactMessage" class="mt-3 small"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer class="py-3 bg-dark text-light mt-auto">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-1 mb-md-0 small">© 2025 Paws Animal Rescue</p>
+                <nav>
+                    <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+                    <a href="adopt.html" class="text-light text-decoration-none me-3">Adopt</a>
+                    <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+                </nav>
+            </div>
+        </footer>
+
+        <!--Bootstrap JS-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+
+        <!--JS Script-->
+        <script src="scripts.js"></script>
+    </body>
+</html>
